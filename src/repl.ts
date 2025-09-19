@@ -13,18 +13,18 @@ export function startREPL() {
   });
   rl.prompt();
   rl.on('line', (input: string) => {
-    const cleanedInput = cleanInput(input);
-    if (input === "exit") {
-      rl.close();
-      return;
-    }
-    if (input === null) {
-      rl.prompt();
-      return;
-    }
-    else {
-      console.log(`Your command was: ${cleanedInput[0]}`);
-    }
+    // const cleanedInput = cleanInput(input);
+    // if (input === "exit") {
+    //   rl.close();
+    //   return;
+    // }
+    // if (input === null) {
+    //   rl.prompt();
+    //   return;
+    // }
+    // else {
+    //   console.log(`Your command was: ${cleanedInput[0]}`);
+    // }
   });
 }
 
