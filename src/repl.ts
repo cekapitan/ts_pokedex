@@ -13,6 +13,8 @@ export function startREPL() {
   });
   rl.prompt();
   rl.on('line', (input: string) => {
+    const commands = getCommands();
+    
     // const cleanedInput = cleanInput(input);
     // if (input === "exit") {
     //   rl.close();
